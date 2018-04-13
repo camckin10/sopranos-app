@@ -45,9 +45,9 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">The Clickster</h1>
+          <h1 className="App-title">Clicky Sopranos</h1>
           <p className="App-intro">
-            Try not to click the same image twice!
+            See which character sleeps with the fishes.
           </p>
         </header>
         <Score total={this.state.score}
@@ -55,18 +55,17 @@ class App extends Component {
                status={this.state.status}
                />
         <Wrapper>
-          {this.state.pups.map(puppy => (
+          {this.state.sopranos.map(soprano => (
             <Card
               shuffleScoreCard={this.shuffleScoreCard}
-              id={puppy.id}
-              key={puppy.id}
-              image={puppy.image}
+              id={soprano.id}
+              key={soprano.id}
+              image={soprano.image}
             />
           ))}
         </Wrapper>
         <footer>
-          <p>Designed and built by Heather Mathies. You can find the 
-          code<a href="https://github.com/hmathies/Clicky-Game" target="_blank" rel="noopener"> here</a>.</p>
+          <p></p>
         </footer>
     </div>
     );
